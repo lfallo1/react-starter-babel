@@ -13,7 +13,7 @@ var SuperheroApp = React.createClass({
       "superheroes" : SuperheroApi.getSuperheroes()
     }
   },
-  handleClick : function(name, level
+  handleClick : function(name, level){
     SuperheroApi.addSuperhero(name, level);
     this.setState(SuperheroApi.getSuperheroes());
   },
